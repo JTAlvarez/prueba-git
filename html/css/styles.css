@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Raleway', sans-serif;
+background-image: url(../images/bg-body.png);
+background-attachment: fixed;
+}
+ul, ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.container{
+  width:95%;
+  margin: auto;
+}
+/*header start*/
+.logo{
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 0 5px black;
+  max-width: 140px;
+}
+.toggle-nav{
+  background-color: #333;
+  display: block;
+  width: 45px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px auto;
+}
+/*.main-nav ul{
+  display: none;
+}*/
+.ion-navicon-round{
+  color: #fff;
+  font-size: 25px;
+}
+
+.main-nav a{
+  display: block;
+  background-color: #333;
+  color: #ccc;
+  font-size: 1.8em;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #333;
+  margin: auto;
+  padding: 15px;
+}
+/*header end*/
+.banner{
+  display: none;
+}
+.product{
+  margin-bottom: 15px;
+}
+
+.product a{
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+@media (min-width:640px) {
+.product {
+  width: 48.33%;
+  margin-left: 0.83%;
+  margin-right: 0.83%;
+  float: left;
+}
+.banner{
+  display: block;
+
+}
+.toggle-nav{
+  display:none;
+}
+.nav ul{
+  display: block;
+  overflow: hidden;
+}
+.main-nav li{
+  float: left;
+  width: 15%;
+  font-size: 0.6em;
+  text-align: center;
+  margin: 0 0.83%;
+
+}
+}
+@media (min-width:960px) {
+  .product{
+    width: 31,67%;
+    float: left;
+  }
+  .main-footer{
+    padding: 30px 0;
+  }
+.main-footer ul{
+  text-align: center;
+}
+.main-footer li{
+  display: inline-block;
+  border-right: white;
+}
+.main-footer a{
+  border: none;
+}
+.main-footer li:last-child{
+  border-right: none;
+}
+}
+
+/*product end*/
+
+.main-footer{
+ background-color: #f00;
+  border-radius: 20px 20px 0 0;
+  clear: both;
+}
+.main-footer a{
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px #333;
+}
